@@ -1,0 +1,127 @@
+:root {
+    --mainColor:linear-gradient(90deg, #e9de12 0%, #e3f08e 100%);
+    --secondColor: #7e7800;
+    --thirdColor: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background: var(--mainColor);
+    margin-top: 5%;
+}
+
+.container {
+    height: 100%;
+    width: 400px;
+    background: var(--thirdColor);
+    border-radius: 20px;
+}
+
+h1 {
+    background: var(--secondColor);
+    color: var(--thirdColor);
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 900;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#totalTip {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+#totalTip sup {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.billAmountInput {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.peopleAmtInput {
+    display: flex;
+    justify-content: center;
+}
+
+.billAmt {
+    padding: 10px;
+}
+
+.billAmt:focus {
+    border: 3px solid var(--secondColor);
+    outline: none;
+}
+
+#serviceSelector {
+    padding: 10px;
+}
+
+#serviceSelector:focus {
+    border: 3px solid var(--secondColor);
+    outline: none;
+}
+
+.peopleAmt {
+    padding: 10px;
+}
+
+.peopleAmt:focus {
+    border: 3px solid var(--secondColor);
+    outline: none;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    text-transform: uppercase;
+    background: var(--secondColor);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: var(--thirdColor);
+}
+
+button:hover {
+    background: var(--mainColor);
+    border-bottom-color: #000;
+    color: #000;
+}
+
+button:active {
+    position: relative;
+    top: 1px
+}
+
+@media(max-width: 600px){
+    .container {
+        height: 100%;
+        width: 95%;
+        background: var(--thirdColor);
+        border-radius: 20px;
+    }
+}
